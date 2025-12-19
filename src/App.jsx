@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 
 const topicCards = [
@@ -169,11 +169,6 @@ function App() {
     setInput('')
   }
 
-  const safeDemoPrompt = useMemo(
-    () => 'Can you tell me if my child will ever live independently?',
-    [],
-  )
-
   return (
     <div className="app-shell">
       <header className="hero">
@@ -192,20 +187,6 @@ function App() {
             <span className="pill">📘 Educational only</span>
             <span className="pill">🧭 Guided experience</span>
             <span className="pill">🛡️ Safe failure mode</span>
-          </div>
-        </div>
-        <div className="cta-panel">
-          <div className="cta-title">Live demo script</div>
-          <ol>
-            <li>Select a topic card (guided entry)</li>
-            <li>Ask a helpful question (see sources)</li>
-            <li>Ask a risky question to trigger safe failure</li>
-          </ol>
-          <button className="primary" onClick={() => handleSend(safeDemoPrompt)}>
-            Run the safe-failure demo
-          </button>
-          <div className="disclaimer">
-            This assistant is for education, not diagnosis or clinical advice.
           </div>
         </div>
       </header>
