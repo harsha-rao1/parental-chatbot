@@ -245,18 +245,18 @@ function App() {
       </main>
 
       <footer className="footer">
-        <div>
+        <div className="footer-content">
           <div className="footer-title">Auditable & institution-ready</div>
-          <p>
+          <p className="footer-description">
             Responses cite DSM-5 summaries, CDC autism content, peer-reviewed research, and
             institution-approved family education materials. The assistant refuses out-of-scope
             questions by design.
           </p>
         </div>
-        <div className="footer-links">
-          <span>Educational only</span>
-          <span>Sources transparent</span>
-          <span>Scope-aware</span>
+        <div className="footer-badges">
+          <span className="footer-badge">Educational only</span>
+          <span className="footer-badge">Sources transparent</span>
+          <span className="footer-badge">Scope-aware</span>
         </div>
       </footer>
     </div>
